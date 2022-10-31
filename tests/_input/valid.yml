@@ -1,0 +1,35 @@
+
+
+#used for API server
+#datasource1:
+#    #class: core\datasources\RestDataSource
+#    class: extensions\api\datasources\RestAPIDatasource
+#    credentials:
+#        baseUrl: http://127.0.0.1:8070
+#        format: json
+#        headers:
+#            serverName: api-server
+#            serverAuth: $1$lIDKkGiyJVn2bZSQdxwEYW0
+
+
+database:
+#    host: localhost
+#    username: username_here
+#    password: password_here
+#    dbName: db_name_here
+
+
+local:
+  class: 'QuantumUnit\Connections\Clients\LocalhostConnection'
+  credentials:
+    host: localhost
+    username: user
+    password: passwd
+    dbName: mydb
+    authentication: true
+
+
+
+
+#default:
+default: local
