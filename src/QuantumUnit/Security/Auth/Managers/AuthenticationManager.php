@@ -15,23 +15,23 @@
  * Time: 12:18 AM
  */
 
-namespace Gossamer\Ra\Security\Managers;
+namespace QuantumUnit\Security\Auth\Managers;
 
 use Gossamer\Horus\Http\Traits\ClientIPAddressTrait;
 use Gossamer\Neith\Logging\LoggingInterface;
 use Gossamer\Horus\Http\HttpRequest;
 use Gossamer\Horus\Http\HttpResponse;
-use Gossamer\Ra\Exceptions\ClientCredentialsNotFoundException;
-use Gossamer\Ra\Security\Client;
-use Gossamer\Ra\Security\Providers\AuthenticationProviderInterface;
-use Gossamer\Ra\Security\SecurityContextInterface;
-use Gossamer\Ra\Security\SecurityToken;
+use QuantumUnit\Security\Auth\Exceptions\ClientCredentialsNotFoundException;
+use QuantumUnit\Security\Auth\Client;
+use QuantumUnit\Security\Auth\Providers\AuthenticationProviderInterface;
+use QuantumUnit\Security\Auth\SecurityContextInterface;
+use QuantumUnit\Security\Auth\SecurityToken;
 use Gossamer\Set\Utils\Container;
 
 
 /**
  * Class AuthenticationManager
- * @package Gossamer\Ra\Security\Managers
+ * @package QuantumUnit\Security\Auth\Managers
  *
  * This class is the abstract authentication class. It is intended for handling all
  * requests that require authentication before proceeding. A provider will be
@@ -171,7 +171,7 @@ abstract class AuthenticationManager
 
     /**
      *
-     * @return \Gossamer\Ra\Security\Client
+     * @return \QuantumUnit\Security\Auth\Client
      */
     public abstract function getClient();
 

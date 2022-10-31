@@ -15,14 +15,14 @@
  * Time: 9:09 PM
  */
 
-namespace Gossamer\Ra\JWT\Filters;
+namespace QuantumUnit\Security\Auth\JWT\Filters;
 
 
 use Gossamer\Horus\Filters\AbstractFilter;
 use Gossamer\Horus\Filters\FilterChain;
 use Gossamer\Horus\Http\HttpRequest;
 use Gossamer\Horus\Http\HttpResponse;
-use Gossamer\Ra\JWT\TokenManager;
+use QuantumUnit\Security\Auth\JWT\TokenManager;
 
 class EncryptJwtFilter extends AbstractFilter
 {

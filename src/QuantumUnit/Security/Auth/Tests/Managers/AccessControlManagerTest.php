@@ -6,13 +6,13 @@
  * Time: 10:33 PM
  */
 
-namespace Gossamer\Ra\Security\Tests\Managers;
+namespace QuantumUnit\Security\Auth\Tests\Managers;
 
 
 use Gossamer\Core\Configuration\Traits\LoadConfigurationTrait;
-use Gossamer\Ra\Security\Authorization\Voters\VoterInterface;
-use Gossamer\Ra\Security\Managers\AccessControlManager;
-use Gossamer\Ra\Security\Tests\Traits\TokenTraitsForTesting;
+use QuantumUnit\Security\Auth\Authorization\Voters\VoterInterface;
+use QuantumUnit\Security\Auth\Managers\AccessControlManager;
+use QuantumUnit\Security\Auth\Tests\Traits\TokenTraitsForTesting;
 use tests\BaseTest;
 class AccessControlManagerTest extends BaseTest
 {
@@ -40,9 +40,9 @@ class AccessControlManagerTest extends BaseTest
 
     /**
      * @throws \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
-     * @throws \Gossamer\Ra\Exceptions\UnauthorizedAccessException
+     * @throws \QuantumUnit\Security\Auth\Exceptions\UnauthorizedAccessException
      *
-     * @expectedException \Gossamer\Ra\Exceptions\UnauthorizedAccessException
+     * @expectedException \QuantumUnit\Security\Auth\Exceptions\UnauthorizedAccessException
      */
     public function testUnauthorizedAccess() {
         $ymlKey = 'test_manager';
@@ -65,7 +65,7 @@ class AccessControlManagerTest extends BaseTest
 
     /**
      * @throws \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
-     * @throws \Gossamer\Ra\Exceptions\UnauthorizedAccessException
+     * @throws \QuantumUnit\Security\Auth\Exceptions\UnauthorizedAccessException
      *
      * @expectedException \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
      */
@@ -93,7 +93,7 @@ class AccessControlManagerTest extends BaseTest
 
     /**
      * @throws \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
-     * @throws \Gossamer\Ra\Exceptions\UnauthorizedAccessException
+     * @throws \QuantumUnit\Security\Auth\Exceptions\UnauthorizedAccessException
      *
      * @expectedException \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
      */
@@ -121,7 +121,7 @@ class AccessControlManagerTest extends BaseTest
 
     /**
      * @throws \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
-     * @throws \Gossamer\Ra\Exceptions\UnauthorizedAccessException
+     * @throws \QuantumUnit\Security\Auth\Exceptions\UnauthorizedAccessException
      *
      * @expectedException \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
      */
@@ -149,7 +149,7 @@ class AccessControlManagerTest extends BaseTest
 
     /**
      * @throws \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
-     * @throws \Gossamer\Ra\Exceptions\UnauthorizedAccessException
+     * @throws \QuantumUnit\Security\Auth\Exceptions\UnauthorizedAccessException
      *
      * @expectedException \Gossamer\Core\Configuration\Exceptions\KeyNotSetException
      */

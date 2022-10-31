@@ -15,7 +15,7 @@
  * Time: 9:15 PM
  */
 
-namespace Gossamer\Ra\Exceptions;
+namespace QuantumUnit\Security\Auth\Exceptions;
 
 
 class TokenExpiredException extends \Exception

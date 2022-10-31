@@ -15,7 +15,7 @@
  * Time: 12:33 AM
  */
 
-namespace Gossamer\Ra\Security;
+namespace QuantumUnit\Security\Auth;
 
 
 interface ClientInterface

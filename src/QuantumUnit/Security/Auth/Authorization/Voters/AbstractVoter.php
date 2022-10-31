@@ -6,7 +6,7 @@
  * Time: 3:19 PM
  */
 
-namespace Gossamer\Ra\Security\Authorization\Voters;
+namespace QuantumUnit\Security\Auth\Authorization\Voters;
 
 
 use Gossamer\Horus\Http\HttpRequest;
@@ -32,8 +32,8 @@ class AbstractVoter
                 - IS_MEMBER
                 - IS_MEMBER_MANAGER
             rules:
-                - { class: 'Gossamer\Ra\Authorization\Voters\CheckUserByRolesVoter', self: true, ignoreRolesIfNotSelf: [IS_MEMBER] }
-                - { class: 'Gossamer\Ra\Authorization\Voters\CheckUserByGroupVoter', self: true, ignoreRolesIfNotSelf: [IS_MEMBER] }
+                - { class: 'QuantumUnit\Security\Auth\Authorization\Voters\CheckUserByRolesVoter', self: true, ignoreRolesIfNotSelf: [IS_MEMBER] }
+                - { class: 'QuantumUnit\Security\Auth\Authorization\Voters\CheckUserByGroupVoter', self: true, ignoreRolesIfNotSelf: [IS_MEMBER] }
      */
     public function __construct(array $voterConfig, HttpRequest $httpRequest)
     {

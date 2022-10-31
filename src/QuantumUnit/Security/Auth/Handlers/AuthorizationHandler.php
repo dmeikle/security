@@ -9,7 +9,7 @@
  *  file that was distributed with this source code.
  */
 
-namespace Gossamer\Ra\Security\Handlers;
+namespace QuantumUnit\Security\Auth\Handlers;
 
 
 use Gossamer\Core\Configuration\Traits\LoadConfigurationTrait;

@@ -6,7 +6,7 @@
  * Time: 4:22 PM
  */
 
-namespace Gossamer\Ra\Security\Managers;
+namespace QuantumUnit\Security\Auth\Managers;
 
 
 use Gossamer\Core\Configuration\Exceptions\KeyNotSetException;
@@ -14,13 +14,13 @@ use Gossamer\Horus\Http\HttpRequest;
 use Gossamer\Horus\Http\HttpResponse;
 use Gossamer\Horus\Http\Traits\ClientIPAddressTrait;
 use Gossamer\Neith\Logging\LoggingInterface;
-use Gossamer\Ra\Exceptions\UnauthorizedAccessException;
-use Gossamer\Ra\Security\Authorization\Voters\VoterInterface;
-use Gossamer\Ra\Security\Client;
-use Gossamer\Ra\Security\Roles\Role;
-use Gossamer\Ra\Security\SecurityToken;
+use QuantumUnit\Security\Auth\Exceptions\UnauthorizedAccessException;
+use QuantumUnit\Security\Auth\Authorization\Voters\VoterInterface;
+use QuantumUnit\Security\Auth\Client;
+use QuantumUnit\Security\Auth\Roles\Role;
+use QuantumUnit\Security\Auth\SecurityToken;
 use Gossamer\Set\Utils\ContainerTrait;
-use Gossamer\Ra\Security\Authorization\Voters\Voter;
+use QuantumUnit\Security\Auth\Authorization\Voters\Voter;
 
 class AccessControlManager
 {

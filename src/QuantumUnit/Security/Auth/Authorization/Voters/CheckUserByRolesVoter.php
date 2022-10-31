@@ -15,13 +15,13 @@
  * Time: 12:41 PM
  */
 
-namespace Gossamer\Ra\Security\Authorization\Voters;
+namespace QuantumUnit\Security\Auth\Authorization\Voters;
 
 
-use Gossamer\Ra\Security\Roles\Role;
-use Gossamer\Ra\Security\TokenInterface;
-use Gossamer\Ra\Security\Authorization\Voters\AbstractVoter;
-use Gossamer\Ra\Security\Authorization\Voters\VoterInterface;
+use QuantumUnit\Security\Auth\Roles\Role;
+use QuantumUnit\Security\Auth\TokenInterface;
+use QuantumUnit\Security\Auth\Authorization\Voters\AbstractVoter;
+use QuantumUnit\Security\Auth\Authorization\Voters\VoterInterface;
 
 class CheckUserByRolesVoter extends AbstractVoter implements VoterInterface
 {

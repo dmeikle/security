@@ -15,10 +15,10 @@
  * Time: 11:30 AM
  */
 
-namespace Gossamer\Ra\Security\Tests\Traits;
+namespace QuantumUnit\Security\Auth\Tests\Traits;
 
 
-use Gossamer\Ra\Security\Traits\EncryptionTrait;
+use QuantumUnit\Security\Auth\Traits\EncryptionTrait;
 use tests\BaseTest;
 
 class EncryptionTraitTest extends BaseTest

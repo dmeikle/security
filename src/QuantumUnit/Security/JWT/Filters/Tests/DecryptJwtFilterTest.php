@@ -6,15 +6,15 @@
  * Time: 5:54 PM
  */
 
-namespace lib\Gossamer\Ra\JWT\Filters\Tests;
+namespace lib\QuantumUnit\Security\Auth\JWT\Filters\Tests;
 
 
 use Gossamer\Essentials\Configuration\SiteParams;
 use Gossamer\Horus\Filters\FilterConfig;
 use Gossamer\Horus\Http\HttpRequest;
 use Gossamer\Horus\Http\RequestParams;
-use Gossamer\Ra\JWT\Filters\DecryptJwtFilter;
-use Gossamer\Ra\JWT\TokenManager;
+use QuantumUnit\Security\Auth\JWT\Filters\DecryptJwtFilter;
+use QuantumUnit\Security\Auth\JWT\TokenManager;
 use tests\BaseTest;
 
 class DecryptJwtFilterTest extends BaseTest

@@ -15,7 +15,7 @@
  * Time: 9:33 PM
  */
 
-namespace Gossamer\Ra\Exceptions;
+namespace QuantumUnit\Security\Auth\Exceptions;
 
 
 class ClientCredentialsNotFoundException extends \Exception

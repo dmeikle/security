@@ -15,14 +15,14 @@
  * Time: 10:38 AM
  */
 
-namespace Gossamer\Ra\Security\Tests\Authorization\Voters;
+namespace QuantumUnit\Security\Auth\Tests\Authorization\Voters;
 
 
 use Gossamer\Core\Configuration\Traits\LoadConfigurationTrait;
-use Gossamer\Ra\Security\Authorization\Voters\CheckUserByRolesVoter;
-use Gossamer\Ra\Security\Authorization\Voters\VoterInterface;
-use Gossamer\Ra\Security\Roles\Role;
-use Gossamer\Ra\Security\Tests\Traits\TokenTraitsForTesting;
+use QuantumUnit\Security\Auth\Authorization\Voters\CheckUserByRolesVoter;
+use QuantumUnit\Security\Auth\Authorization\Voters\VoterInterface;
+use QuantumUnit\Security\Auth\Roles\Role;
+use QuantumUnit\Security\Auth\Tests\Traits\TokenTraitsForTesting;
 use tests\BaseTest;
 
 class CheckUserByRolesVoterTest extends BaseTest

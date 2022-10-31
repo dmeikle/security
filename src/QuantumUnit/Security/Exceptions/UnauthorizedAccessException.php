@@ -6,7 +6,7 @@
  * Time: 8:00 PM
  */
 
-namespace Gossamer\Ra\Exceptions;
+namespace QuantumUnit\Security\Auth\Exceptions;
 
 
 class UnauthorizedAccessException extends \Exception

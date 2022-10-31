@@ -15,8 +15,8 @@
  * Time: 8:50 PM
  */
 
-namespace Gossamer\Ra\Security\Providers;
-use Gossamer\Ra\Security\ClientInterface;
+namespace QuantumUnit\Security\Auth\Providers;
+use QuantumUnit\Security\Auth\ClientInterface;
 
 
 /**

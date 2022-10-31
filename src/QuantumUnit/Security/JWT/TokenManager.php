@@ -15,14 +15,14 @@
  * Time: 8:18 PM
  */
 
-namespace Gossamer\Ra\JWT;
+namespace QuantumUnit\Security\Auth\JWT;
 
 
 use Gossamer\Essentials\Configuration\Exceptions\KeyNotSetException;
 use Gossamer\Essentials\Configuration\Traits\LoadConfigurationTrait;
 use Gossamer\Horus\Http\HttpRequest;
-use Gossamer\Ra\Exceptions\TokenExpiredException;
-use Gossamer\Ra\Security\Traits\EncryptionTrait;
+use QuantumUnit\Security\Auth\Exceptions\TokenExpiredException;
+use QuantumUnit\Security\Auth\Traits\EncryptionTrait;
 
 class TokenManager
 {

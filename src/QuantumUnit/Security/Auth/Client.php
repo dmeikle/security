@@ -15,7 +15,7 @@
  * Time: 12:32 AM
  */
 
-namespace Gossamer\Ra\Security;
+namespace QuantumUnit\Security\Auth;
 
 
 class Client implements ClientInterface {

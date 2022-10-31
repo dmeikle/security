@@ -15,7 +15,7 @@
  * Time: 2:17 PM
  */
 
-namespace Gossamer\Ra\Security\Services;
+namespace QuantumUnit\Security\Auth\Services;
 
 
 use Gossamer\Core\Routing\URISectionComparator;

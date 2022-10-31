@@ -15,7 +15,7 @@
  * Time: 8:36 PM
  */
 
-namespace Gossamer\Ra\JWT\Filters;
+namespace QuantumUnit\Security\Auth\JWT\Filters;
 
 
 use Gossamer\Core\Components\Security\Core\Client;
@@ -25,9 +25,9 @@ use Gossamer\Horus\Filters\FilterChain;
 use Gossamer\Horus\Http\HttpRequest;
 use Gossamer\Horus\Http\HttpResponse;
 use Gossamer\Pesedget\Extensions\Couchbase\Exceptions\KeyNotFoundException;
-use Gossamer\Ra\Exceptions\TokenExpiredException;
-use Gossamer\Ra\JWT\TokenManager;
-use Gossamer\Ra\Security\SecurityToken;
+use QuantumUnit\Security\Auth\Exceptions\TokenExpiredException;
+use QuantumUnit\Security\Auth\JWT\TokenManager;
+use QuantumUnit\Security\Auth\SecurityToken;
 
 class DecryptJwtFilter extends AbstractFilter
 {

@@ -15,7 +15,7 @@
  * Time: 10:12 PM
  */
 
-namespace Gossamer\Ra\Exceptions;
+namespace QuantumUnit\Security\Auth\Exceptions;
 
 
 class InvalidFormTokenException extends \Exception

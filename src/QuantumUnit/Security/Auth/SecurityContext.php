@@ -15,7 +15,7 @@
  * Time: 8:44 PM
  */
 
-namespace Gossamer\Ra\Security;
+namespace QuantumUnit\Security\Auth;
 
 
 /**

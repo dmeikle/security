@@ -15,7 +15,7 @@
  * Time: 12:12 AM
  */
 
-namespace Gossamer\Ra\Encryption;
+namespace QuantumUnit\Security\Auth\Encryption;
 
 
 /**

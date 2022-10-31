@@ -15,11 +15,11 @@
  * Time: 10:50 AM
  */
 
-namespace Gossamer\Ra\Security\Tests\Traits;
+namespace QuantumUnit\Security\Auth\Tests\Traits;
 
 
-use Gossamer\Ra\Security\Client;
-use Gossamer\Ra\Security\SecurityToken;
+use QuantumUnit\Security\Auth\Client;
+use QuantumUnit\Security\Auth\SecurityToken;
 
 trait TokenTraitsForTesting
 {

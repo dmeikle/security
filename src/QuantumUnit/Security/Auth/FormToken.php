@@ -13,10 +13,10 @@
  *
  * @author Dave Meikle
  */
-namespace Gossamer\Ra\Security;
+namespace QuantumUnit\Security\Auth;
 
 
-use Gossamer\Ra\Encryption\Encryption;
+use QuantumUnit\Security\Auth\Encryption\Encryption;
 
 class FormToken implements FormTokenInterface
 {
@@ -27,8 +27,7 @@ class FormToken implements FormTokenInterface
     protected $clientId;
 
     /**
-     *
-     * @param \core\components\security\core\Client $client
+     * @param Client $client
      */
     public function __construct(Client $client) {
         $this->tokenTimestamp = time();

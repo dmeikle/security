@@ -15,16 +15,16 @@
  * Time: 10:09 PM
  */
 
-namespace Gossamer\Ra\Security\Filters;
+namespace QuantumUnit\Security\Auth\Filters;
 
 
 use Gossamer\Horus\Filters\AbstractFilter;
 use Gossamer\Horus\Filters\FilterChain;
 use Gossamer\Horus\Http\HttpRequest;
 use Gossamer\Horus\Http\HttpResponse;
-use Gossamer\Ra\Exceptions\InvalidFormTokenException;
-use Gossamer\Ra\Security\FormToken;
-use Gossamer\Ra\Security\Traits\FormTokenTrait;
+use QuantumUnit\Security\Auth\Exceptions\InvalidFormTokenException;
+use QuantumUnit\Security\Auth\FormToken;
+use QuantumUnit\Security\Auth\Traits\FormTokenTrait;
 use Gossamer\Essentials\Configuration\Traits\LoadConfigurationTrait;
 
 class VerifyFormTokenFilter extends AbstractFilter

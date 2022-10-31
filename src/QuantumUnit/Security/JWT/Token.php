@@ -15,7 +15,7 @@
  * Time: 8:16 PM
  */
 
-namespace Gossamer\Ra\JWT;
+namespace QuantumUnit\Security\Auth\JWT;
 
 
 class Token

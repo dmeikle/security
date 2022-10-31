@@ -15,12 +15,12 @@
  * Time: 2:58 PM
  */
 
-namespace Gossamer\Ra\Security\Services;
+namespace QuantumUnit\Security\Auth\Services;
 
 
-use Gossamer\Ra\Exceptions\ClientCredentialsNotFoundException;
-use Gossamer\Ra\Security\Managers\AuthenticationManager;
-use Gossamer\Ra\Security\SecurityContextInterface;
+use QuantumUnit\Security\Auth\Exceptions\ClientCredentialsNotFoundException;
+use QuantumUnit\Security\Auth\Managers\AuthenticationManager;
+use QuantumUnit\Security\Auth\SecurityContextInterface;
 
 class AuthenticationService
 {

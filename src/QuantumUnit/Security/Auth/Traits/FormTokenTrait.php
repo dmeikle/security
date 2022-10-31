@@ -15,11 +15,11 @@
  * Time: 9:23 PM
  */
 
-namespace Gossamer\Ra\Security\Traits; 
+namespace QuantumUnit\Security\Auth\Traits; 
 
 
 use Gossamer\Core\Components\Security\Core\Client;
-use Gossamer\Ra\Security\FormToken;
+use QuantumUnit\Security\Auth\FormToken;
 
 trait FormTokenTrait
 {

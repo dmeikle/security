@@ -6,7 +6,7 @@
  * Time: 9:41 PM
  */
 
-namespace Gossamer\Ra\Security\Filters;
+namespace QuantumUnit\Security\Auth\Filters;
 
 
 use Gossamer\Core\Components\Security\Traits\GetLoggedInMemberTrait;

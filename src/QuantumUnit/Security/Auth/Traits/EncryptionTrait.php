@@ -15,7 +15,7 @@
  * Time: 8:22 PM
  */
 
-namespace Gossamer\Ra\Security\Traits;
+namespace QuantumUnit\Security\Auth\Traits;
 
 use Jose\Component\Core\JWK;
 use Jose\Component\Core\AlgorithmManager;

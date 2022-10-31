@@ -15,10 +15,10 @@
  * Time: 12:29 PM
  */
 
-namespace Gossamer\Ra\Security\Authorization\Voters;
+namespace QuantumUnit\Security\Auth\Authorization\Voters;
 
 
-use Gossamer\Ra\Security\TokenInterface;
+use QuantumUnit\Security\Auth\TokenInterface;
 
 interface VoterInterface
 {

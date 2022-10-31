@@ -15,12 +15,12 @@
  * Time: 10:22 PM
  */
 
-namespace Gossamer\Ra\Security\Traits;
+namespace QuantumUnit\Security\Auth\Traits;
 
 
 use Gossamer\Horus\Http\HttpRequest; 
-use Gossamer\Ra\Security\Client;
-use Gossamer\Ra\Security\SecurityToken;
+use QuantumUnit\Security\Auth\Client;
+use QuantumUnit\Security\Auth\SecurityToken;
 
 trait GetSecurityTokenTrait
 {
