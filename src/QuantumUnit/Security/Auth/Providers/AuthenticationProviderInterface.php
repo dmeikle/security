@@ -26,11 +26,11 @@ use QuantumUnit\Security\Auth\ClientInterface;
  */
 interface AuthenticationProviderInterface {
 
-    public function loadClientByCredentials($credential);
+    public function loadClientByCredentials(array $credentials);
 
     public function refreshClient(ClientInterface $client);
 
-    public function supportsClass($class);
+    public function supportsClass(string $class);
 
     public function getRoles(ClientInterface $client);
 }
