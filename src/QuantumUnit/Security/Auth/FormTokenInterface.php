@@ -25,19 +25,19 @@ namespace QuantumUnit\Security\Auth;
  */
 interface FormTokenInterface
 {
-    public function setIPAddress($ipAddress);
+    public function setIPAddress($ipAddress): void;
 
-    public function setTokenString($token);
+    public function setTokenString($token): void;
 
-    public function toString();
+    public function toString(): string;
 
-    public function getTimestamp();
+    public function getTimestamp(): string;
 
-    public function setCredentials($credentials);
+    public function setCredentials(array $credentials): void;
 
-    public function setClientId($id);
+    public function setClientId(string $id): void;
 
-    public function generateTokenString();
+    public function generateTokenString(): string;
 
-    public function getTokenString();
+    public function getTokenString(): string;
 } 

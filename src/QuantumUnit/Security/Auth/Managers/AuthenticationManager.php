@@ -17,16 +17,16 @@
 
 namespace QuantumUnit\Security\Auth\Managers;
 
-use Gossamer\Horus\Http\Traits\ClientIPAddressTrait;
-use Gossamer\Neith\Logging\LoggingInterface;
-use Gossamer\Horus\Http\HttpRequest;
-use Gossamer\Horus\Http\HttpResponse;
+use QuantumUnit\Filtering\Http\HttpRequest;
+use QuantumUnit\Filtering\Http\Traits\ClientIPAddressTrait;
 use QuantumUnit\Security\Auth\Exceptions\ClientCredentialsNotFoundException;
 use QuantumUnit\Security\Auth\Client;
 use QuantumUnit\Security\Auth\Providers\AuthenticationProviderInterface;
 use QuantumUnit\Security\Auth\SecurityContextInterface;
 use QuantumUnit\Security\Auth\SecurityToken;
-use Gossamer\Set\Utils\Container;
+use QuantumUnit\Utils\Container\Container;
+use QuantumUnit\Utils\Container\ContainerTrait;
+use QuantumUnit\Utils\Logging\Contracts\LoggingInterface;
 
 
 /**
@@ -44,7 +44,7 @@ use Gossamer\Set\Utils\Container;
 abstract class AuthenticationManager
 {
 
-    use \Gossamer\Set\Utils\ContainerTrait;
+    use ContainerTrait;
 
     use ClientIPAddressTrait;
 
@@ -60,12 +60,11 @@ abstract class AuthenticationManager
 
     protected $response;
 
-    public function __construct(LoggingInterface $logger, HttpRequest &$request, Container $container, AuthenticationProviderInterface $provider, HttpInterface $response = null) {
+    public function __construct(LoggingInterface $logger, HttpRequest &$request, Container $container, AuthenticationProviderInterface $provider) {
         $this->logger = $logger;
         $this->request = $request;
         $this->container = $container;
         $this->userAuthenticationProvider = $provider;
-        $this->response = $response;
 
     }
 

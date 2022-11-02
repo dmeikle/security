@@ -25,25 +25,25 @@ namespace QuantumUnit\Security\Auth;
  */
 interface TokenInterface {
 
-    public function toString();
+    public function toString(): string;
 
-    public function getRoles();
+    public function getRoles(): array;
 
-    public function getClient();
+    public function getClient(): Client;
 
-    public function setClient(ClientInterface $client);
+    public function setClient(ClientInterface $client): void;
 
-    public function getIdentity();
+    public function getIdentity(): array;
 
-    public function isAuthenticated();
+    public function isAuthenticated(): bool;
 
-    public function setAuthenticated($isAuthenticated);
+    public function setAuthenticated(bool $isAuthenticated): void;
 
-    public function setAttribute($name, mixed $value);
+    public function setAttribute(string $name, mixed $value): void;
 
-    public function getAttributes();
+    public function getAttributes(): array;
 
-    public function setAttributes(array $attributes);
+    public function setAttributes(array $attributes): void;
 
-    public function eraseCredentials();
+    public function eraseCredentials(): void;
 }
