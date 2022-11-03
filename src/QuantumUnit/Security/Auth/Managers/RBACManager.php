@@ -21,7 +21,7 @@
 namespace QuantumUnit\Security\Auth\Managers;
 
 
-use QuantumUnit\Filters\Http\Traits\ClientIPAddressTrait;
+use QuantumUnit\Http\Traits\ClientIPAddressTrait;
 use QuantumUnit\Http\HttpInterface;
 use QuantumUnit\Security\Auth\Authorization\Voters\VoterInterface;
 use QuantumUnit\Security\Auth\Client;
