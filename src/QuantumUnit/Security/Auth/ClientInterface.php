@@ -21,26 +21,26 @@ namespace QuantumUnit\Security\Auth;
 interface ClientInterface
 {
 
-    public function setPassword($password);
+    public function setPassword(string $password):void;
 
-    public function setRoles(array $roles);
+    public function setRoles(array $roles):void;
 
-    public function setCredentials($credentials);
+    public function setCredentials(array $credentials):void;
 
-    public function setIpAddress($ipAddress);
+    public function setIpAddress(string $ipAddress):void;
 
-    public function getPassword();
+    public function getPassword(): string;
 
-    public function getRoles();
+    public function getRoles(): array;
 
-    public function getCredentials();
+    public function getCredentials(): string;
 
-    public function getIpAddress();
+    public function getIpAddress(): string;
 
-    public function setStatus($status);
+    public function setStatus(string $status):void;
 
-    public function getStatus();
+    public function getStatus(): string;
 
-    public function getId();
+    public function getId(): string;
 
 }

@@ -29,6 +29,7 @@ class Client implements ClientInterface {
     protected $email = null;
     protected $firstname = null;
     protected $lastname = null;
+    protected $emappings_id = null;
 
     /**
      *
@@ -48,9 +49,8 @@ class Client implements ClientInterface {
      *
      * @param string $password
      */
-    public function setPassword($password) {
+    public function setPassword(string $password):void {
         $this->password = $password;
-        return $this;
     }
 
     /**
@@ -58,9 +58,8 @@ class Client implements ClientInterface {
      *
      * @param array $roles
      */
-    public function setRoles(array $roles) {
+    public function setRoles(array $roles):void {
         $this->roles = $roles;
-        return $this;
     }
 
     /**
@@ -68,9 +67,8 @@ class Client implements ClientInterface {
      *
      * @param string $credentials
      */
-    public function setCredentials($credentials) {
+    public function setCredentials(array $credentials):void {
         $this->credentials = $credentials;
-        return $this;
     }
 
     /**
@@ -78,9 +76,8 @@ class Client implements ClientInterface {
      *
      * @param string $ipAddress
      */
-    public function setIpAddress($ipAddress) {
+    public function setIpAddress(string $ipAddress):void {
         $this->ipAddress = $ipAddress;
-        return $this;
     }
 
     /**
@@ -88,9 +85,8 @@ class Client implements ClientInterface {
      *
      * @param string $email
      */
-    public function setEmail($email) {
+    public function setEmail(string $email):void {
         $this->email = $email;
-        return $this;
     }
 
     /**
@@ -98,7 +94,7 @@ class Client implements ClientInterface {
      *
      * @return string
      */
-    public function getPassword() {
+    public function getPassword(): string {
         return $this->password;
     }
 
@@ -107,7 +103,7 @@ class Client implements ClientInterface {
      *
      * @return array
      */
-    public function getRoles() {
+    public function getRoles(): array {
         if (is_array($this->roles)) {
             return $this->roles;
         }
@@ -120,7 +116,7 @@ class Client implements ClientInterface {
      *
      * @return string
      */
-    public function getCredentials() {
+    public function getCredentials(): string {
         return $this->credentials;
     }
 
@@ -129,7 +125,7 @@ class Client implements ClientInterface {
      *
      * @return string
      */
-    public function getIpAddress() {
+    public function getIpAddress():string {
         return $this->ipAddress;
     }
 
@@ -138,7 +134,7 @@ class Client implements ClientInterface {
      *
      * @return string
      */
-    public function setStatus($status) {
+    public function setStatus(string $status):void {
         $this->status = $status;
     }
 
@@ -147,7 +143,7 @@ class Client implements ClientInterface {
      *
      * @return string
      */
-    public function getStatus() {
+    public function getStatus():string {
         return $this->status;
     }
 
@@ -156,11 +152,11 @@ class Client implements ClientInterface {
      *
      * @return int
      */
-    public function getId() {
+    public function getId():string {
         return $this->id;
     }
 
-    public function setId($id) {
+    public function setId(string $id) {
         $this->id = $id;
         return $this;
     }
@@ -173,7 +169,7 @@ class Client implements ClientInterface {
         return $this->email;
     }
 
-    public function toArray() {
+    public function toArray(): array {
         $retval = array();
         foreach(get_object_vars($this) as $key => $property) {
 
@@ -194,7 +190,7 @@ class Client implements ClientInterface {
     /**
      * @param null $firstname
      */
-    public function setFirstname($firstname)
+    public function setFirstname(string $firstname)
     {
         $this->firstname = $firstname;
     }
@@ -202,7 +198,7 @@ class Client implements ClientInterface {
     /**
      * @return null
      */
-    public function getLastname()
+    public function getLastname(): string
     {
         return $this->lastname;
     }
@@ -210,10 +206,25 @@ class Client implements ClientInterface {
     /**
      * @param null $lastname
      */
-    public function setLastname($lastname)
+    public function setLastname(string $lastname):void
     {
         $this->lastname = $lastname;
     }
-    
-    
+
+    /**
+     * @return null
+     */
+    public function getEmappingsId(): string
+    {
+        return $this->emappings_id;
+    }
+
+    /**
+     * @param null $emappings_id
+     */
+    public function setEmappingsId(string $emappings_id): void
+    {
+        $this->emappings_id = $emappings_id;
+    }
+
 }

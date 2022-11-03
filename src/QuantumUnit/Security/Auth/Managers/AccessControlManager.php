@@ -14,6 +14,7 @@ use Gossamer\Horus\Http\HttpRequest;
 use Gossamer\Horus\Http\HttpResponse;
 use Gossamer\Horus\Http\Traits\ClientIPAddressTrait;
 use Gossamer\Neith\Logging\LoggingInterface;
+use QuantumUnit\Security\Auth\ClientInterface;
 use QuantumUnit\Security\Auth\Exceptions\UnauthorizedAccessException;
 use QuantumUnit\Security\Auth\Authorization\Voters\VoterInterface;
 use QuantumUnit\Security\Auth\Client;
@@ -107,20 +108,21 @@ use ClientIPAddressTrait;
     /**
      * @return Client|null
      */
-    protected function getClient() {
-        $token = $this->getSecurityContextToken();
-        $client = null;
-        if (is_null($token) || !$token) {
-            $client = new Client();
-            $client->setIpAddress($this->getClientIPAddress());
-            $client->setCredentials('ANONYMOUS_USER');
-            $client->setRoles(['ANONYMOUS_USER']);
-        } else {
-            $client = $token->getClient();
-        }
-
-        return $client;
-    }
+    protected abstract function getClient(): ClientInterface;
+//    protected function getClient() {
+//        $token = $this->getSecurityContextToken();
+//        $client = null;
+//        if (is_null($token) || !$token) {
+//            $client = new Client();
+//            $client->setIpAddress($this->getClientIPAddress());
+//            $client->setCredentials('ANONYMOUS_USER');
+//            $client->setRoles(['ANONYMOUS_USER']);
+//        } else {
+//            $client = $token->getClient();
+//        }
+//
+//        return $client;
+//    }
 
     /**
      *

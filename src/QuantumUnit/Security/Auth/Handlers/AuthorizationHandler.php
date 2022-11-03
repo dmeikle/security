@@ -12,11 +12,9 @@
 namespace QuantumUnit\Security\Auth\Handlers;
 
 
-use Gossamer\Core\Configuration\Traits\LoadConfigurationTrait;
-use Gossamer\Core\Services\ParametersInterface;
-use Gossamer\Horus\Http\HttpRequest;
-use Gossamer\Neith\Logging\LoggingInterface;
-use Gossamer\Set\Utils\ContainerTrait;
+
+
+use QuantumUnit\Utils\Container\ContainerTrait;
 
 /**
  * AuthorizationHandler - placeholder - not implemented
@@ -26,7 +24,6 @@ use Gossamer\Set\Utils\ContainerTrait;
 class AuthorizationHandler implements ParametersInterface{
 
     use ContainerTrait;
-    use LoadConfigurationTrait;
 
 
     protected $container = null;
